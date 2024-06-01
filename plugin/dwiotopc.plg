@@ -21,14 +21,14 @@
 
 <FILE Name="&plgPATH;/iotop-c-1.26-x86_64-1.txz" Min="6.8.3" Run="upgradepkg --install-new">
 <URL>&pkgURL;/iotop-c-1.26-x86_64-1.txz</URL>
-<MD5>8b5335c3c69c41e0d33b50a9b790c031</MD5>
+<MD5>fd8bbeb138721aef68fc9ed2e85717ae</MD5>
 </FILE>
 
 <FILE Name="&emhttp;/README.md" Mode="0644">
 <INLINE>
 **iotop (C Version) for UNRAID**
 
-A plugin installing the command line utility iotop-c on UNRAID (usable via terminal command: **iotop**).
+A plugin installing the command line utility iotop-c on UNRAID (terminal command: **iotop-c** / user manual: **iotop-c -h** or **iotop -H inline**).
 </INLINE>
 </FILE>
 
