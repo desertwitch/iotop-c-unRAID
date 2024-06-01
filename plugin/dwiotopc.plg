@@ -25,7 +25,7 @@
 <MD5>8b5335c3c69c41e0d33b50a9b790c031</MD5>
 </FILE>
 
-<FILE Name="&emhttp;/README" Mode="0644">
+<FILE Name="&emhttp;/README.md" Mode="0644">
 <INLINE>
 **iotop (C) for UNRAID**
 
