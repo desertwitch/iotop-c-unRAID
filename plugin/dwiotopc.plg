@@ -1,0 +1,61 @@
+<?xml version='1.0' standalone='yes'?>
+
+<!DOCTYPE PLUGIN [
+<!ENTITY name      "dwiotopc">
+<!ENTITY author    "desertwitch">
+<!ENTITY version   "2024.06.01">
+<!ENTITY launch    "Plugins">
+<!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/iotop-c-unRAID/main">
+<!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
+<!ENTITY pkgURL    "&gitURL;/packages">
+<!ENTITY plgPATH   "/boot/config/plugins/&name;">
+<!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
+]>
+
+<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" support="" min="6.8.3" icon="exchange">
+
+<CHANGES>
+## iotop (C) for UNRAID
+###2024.06.01
+- release note: welcome to the first version of the package
+</CHANGES>
+
+<FILE Name="&plgPATH;/iotop-c-1.26-x86_64-1.txz" Min="6.8.3" Run="upgradepkg --install-new">
+<URL>&pkgURL;/iotop-c-1.26-x86_64-1.txz</URL>
+<MD5>8b5335c3c69c41e0d33b50a9b790c031</MD5>
+</FILE>
+
+<FILE Name="&emhttp;/README" Mode="0644">
+<INLINE>
+**iotop (C) for UNRAID**
+
+A plugin installing the command line utility iotop-c on UNRAID.
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash">
+<INLINE> 
+echo ""
+echo "-------------------------------------------------------------"
+echo " iotop (C) for UNRAID (&version;) has been installed."
+echo " Copyright 2023 - &author;"
+echo "-------------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+<FILE Run="/bin/bash" Method="remove">
+<INLINE>
+removepkg &plgPATH;/*.txz
+rm -rf &plgPATH;
+rm -rf &emhttp;
+echo ""
+echo "-----------------------------------------------------------"
+echo " iotop (C) for UNRAID (&version;) has been removed."
+echo " Copyright 2023 - &author;"
+echo "-----------------------------------------------------------"
+echo ""
+</INLINE>
+</FILE>
+
+</PLUGIN>
