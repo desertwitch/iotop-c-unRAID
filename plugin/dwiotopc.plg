@@ -11,7 +11,7 @@
 <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="" min="6.8.3" icon="database">
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="https://forums.unraid.net/topic/167319-plugin-iotop-c-version-for-unraid/" min="6.8.3" icon="database">
 
 <CHANGES>
 ## iotop (C Version) for UNRAID
