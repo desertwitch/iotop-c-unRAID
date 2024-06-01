@@ -28,7 +28,7 @@ exit 0
 
 <FILE Name="&plgPATH;/iotop-c-1.26-x86_64-1.txz" Min="6.8.3" Run="upgradepkg --install-new">
 <URL>&pkgURL;/iotop-c-1.26-x86_64-1.txz</URL>
-<MD5>fd8bbeb138721aef68fc9ed2e85717ae</MD5>
+<MD5>6848b59475fd157213b189137ddf31d4</MD5>
 </FILE>
 
 <FILE Name="&emhttp;/README.md" Mode="0644">
