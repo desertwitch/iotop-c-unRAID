@@ -19,6 +19,13 @@
 - release note: welcome to the first version of the package.
 </CHANGES>
 
+<FILE Run="/bin/bash">
+<INLINE> 
+killall iotop-c-bin
+exit 0
+</INLINE>
+</FILE>
+
 <FILE Name="&plgPATH;/iotop-c-1.26-x86_64-1.txz" Min="6.8.3" Run="upgradepkg --install-new">
 <URL>&pkgURL;/iotop-c-1.26-x86_64-1.txz</URL>
 <MD5>fd8bbeb138721aef68fc9ed2e85717ae</MD5>
@@ -45,6 +52,7 @@ echo ""
 
 <FILE Run="/bin/bash" Method="remove">
 <INLINE>
+killall iotop-c-bin
 removepkg &plgPATH;/*.txz
 rm -rf &plgPATH;
 rm -rf &emhttp;
