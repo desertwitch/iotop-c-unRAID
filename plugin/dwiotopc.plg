@@ -28,7 +28,7 @@
 <INLINE>
 **iotop (C Version) for UNRAID**
 
-A plugin installing the command line utility iotop-c on UNRAID (terminal command: **iotop-c** / user manual: **iotop-c -h** or **iotop -H inline**).
+iotop-c IO Monitor / Terminal Command: **iotop-c** / User Manual: **iotop-c -h** or **iotop-c -H inline**
 </INLINE>
 </FILE>
 
