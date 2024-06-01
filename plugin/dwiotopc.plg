@@ -36,8 +36,8 @@ A plugin installing the command line utility iotop-c on UNRAID (usable via termi
 <INLINE> 
 echo ""
 echo "-------------------------------------------------------------"
-echo " iotop (C Version) for UNRAID (&version;) has been installed."
-echo " Plugin Maintainer: &author;"
+echo " iotop (C Version) for UNRAID has been installed."
+echo " Version: &version; / Plugin Maintainer: &author;"
 echo "-------------------------------------------------------------"
 echo ""
 </INLINE>
@@ -50,8 +50,8 @@ rm -rf &plgPATH;
 rm -rf &emhttp;
 echo ""
 echo "-----------------------------------------------------------"
-echo " iotop (C Version) for UNRAID (&version;) has been removed."
-echo " Plugin Maintainer: &author;"
+echo " iotop (C Version) for UNRAID has been removed."
+echo " Version: &version; / Plugin Maintainer: &author;"
 echo "-----------------------------------------------------------"
 echo ""
 </INLINE>
