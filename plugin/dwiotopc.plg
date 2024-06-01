@@ -4,7 +4,6 @@
 <!ENTITY name      "dwiotopc">
 <!ENTITY author    "desertwitch">
 <!ENTITY version   "2024.06.01">
-<!ENTITY launch    "Plugins">
 <!ENTITY gitURL    "https://raw.githubusercontent.com/&author;/iotop-c-unRAID/main">
 <!ENTITY pluginURL "&gitURL;/plugin/&name;.plg">
 <!ENTITY pkgURL    "&gitURL;/packages">
@@ -12,7 +11,7 @@
 <!ENTITY emhttp    "/usr/local/emhttp/plugins/&name;">
 ]>
 
-<PLUGIN name="&name;" author="&author;" version="&version;" launch="&launch;" pluginURL="&pluginURL;" support="" min="6.8.3" icon="database">
+<PLUGIN name="&name;" author="&author;" version="&version;" pluginURL="&pluginURL;" support="" min="6.8.3" icon="database">
 
 <CHANGES>
 ## iotop (C Version) for UNRAID
@@ -29,7 +28,7 @@
 <INLINE>
 **iotop (C Version) for UNRAID**
 
-A plugin installing the command line utility iotop-c on UNRAID (used via terminal command: **iotop**).
+A plugin installing the command line utility iotop-c on UNRAID (usable via terminal command: **iotop**).
 </INLINE>
 </FILE>
 
