@@ -21,7 +21,7 @@
 
 <FILE Run="/bin/bash">
 <INLINE> 
-killall iotop-c-bin
+killall iotop-c-bin >/dev/null 2>&amp;1
 exit 0
 </INLINE>
 </FILE>
@@ -52,7 +52,7 @@ echo ""
 
 <FILE Run="/bin/bash" Method="remove">
 <INLINE>
-killall iotop-c-bin
+killall iotop-c-bin >/dev/null 2>&amp;1
 removepkg &plgPATH;/*.txz
 rm -rf &plgPATH;
 rm -rf &emhttp;
