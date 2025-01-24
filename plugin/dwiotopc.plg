@@ -15,20 +15,22 @@
 
 <CHANGES>
 ## iotop (C Version) for UNRAID
+###2025.01.24
+- new: updated from iotop-c-1.26 to iotop-c-1.27
 ###2024.06.01
 - release note: welcome to the first version of the package.
 </CHANGES>
 
 <FILE Run="/bin/bash">
-<INLINE> 
+<INLINE>
 killall iotop-c-bin >/dev/null 2>&amp;1
 exit 0
 </INLINE>
 </FILE>
 
-<FILE Name="&plgPATH;/iotop-c-1.26-x86_64-1.txz" Min="6.8.3" Run="upgradepkg --install-new">
-<URL>&pkgURL;/iotop-c-1.26-x86_64-1.txz</URL>
-<MD5>6848b59475fd157213b189137ddf31d4</MD5>
+<FILE Name="&plgPATH;/iotop-c-1.27-x86_64-1.txz" Min="6.8.3" Run="upgradepkg --install-new">
+<URL>&pkgURL;/iotop-c-1.27-x86_64-1.txz</URL>
+<MD5>70ba5c885c0c7ab4fcaa75d5cf17fa4d</MD5>
 </FILE>
 
 <FILE Name="&emhttp;/README.md" Mode="0644">
@@ -40,7 +42,7 @@ iotop-c IO Monitor / Terminal Command: **iotop-c** / User Manual: **iotop-c -h**
 </FILE>
 
 <FILE Run="/bin/bash">
-<INLINE> 
+<INLINE>
 echo ""
 echo "-------------------------------------------------------------"
 echo " iotop (C Version) for UNRAID has been installed."
